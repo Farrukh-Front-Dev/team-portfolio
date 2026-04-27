@@ -4,7 +4,8 @@ export type Project = {
   link: string;
   demo: string;
   imageLight: string;
-  imageDark?: string; // agar yo‘q bo‘lsa light ishlatiladi
+  imageDark?: string;
+  technologies: string[];
 };
 
 
@@ -17,15 +18,17 @@ export const projects: Project[] = [
     demo: "https://kualumni.uz/",
     imageLight: "/projects/kokand_university_lightMode.png",
     imageDark: "/projects/kokand_university_darkMode.png",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     name: "Kelajakka Qadam Markazi",
     description:
-      "Minimal responsive promo website showcasing an educational center’s links using HTML, CSS, and JavaScript.",
+      "Minimal responsive promo website showcasing an educational center's links using HTML, CSS, and JavaScript.",
     link: "https://github.com/Farrukh-Front-Dev/KelajakkaQadam",
     demo: "https://kelajakka-qadam-markazi.vercel.app/",
-    imageLight: "/projects/kelajakka_qadam_markazi_lightMode.png", // faqat light yetarli
-    imageDark: "/projects/kelajakka_qadam_markazi_lightMode.png"
+    imageLight: "/projects/kelajakka_qadam_markazi_lightMode.png",
+    imageDark: "/projects/kelajakka_qadam_markazi_lightMode.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "Portfolio Website",
@@ -35,6 +38,7 @@ export const projects: Project[] = [
     demo: "#hero",
     imageLight: "/projects/portfolio_website_lightMode.png",
     imageDark: "/projects/portfolio_website_darkMode.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     name: "React Dev Components",
@@ -44,6 +48,6 @@ export const projects: Project[] = [
     demo: "https://react-dev-components.vercel.app/",
     imageLight: "/projects/reactdev_lightMode.png",
     imageDark: "/projects/reactdev_lightMode.png",
+    technologies: ["React", "TypeScript", "CSS"],
   },
 ];
-

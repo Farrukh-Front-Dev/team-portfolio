@@ -11,6 +11,7 @@ interface ProjectCardProps {
     imageDark?: string;
     link: string;
     demo: string;
+    technologies: string[];
   };
   index: number;
   labels: {
@@ -165,6 +166,24 @@ export default function ProjectCard({ project, index, labels }: ProjectCardProps
                      line-clamp-2 sm:line-clamp-3 leading-relaxed">
           {project.description}
         </p>
+
+        {/* Technologies Pills */}
+        <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1 sm:pt-2">
+          {project.technologies.map((tech) => (
+            <span
+              key={tech}
+              className="px-2 sm:px-2.5 md:px-3 py-0.5 sm:py-1 
+                        text-[10px] sm:text-xs md:text-sm font-medium
+                        rounded-full
+                        bg-gray-200 dark:bg-white/10
+                        text-gray-700 dark:text-gray-300
+                        border border-gray-300 dark:border-white/20
+                        transition-colors duration-300"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
     </article>
   );
