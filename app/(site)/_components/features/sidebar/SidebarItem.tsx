@@ -1,8 +1,9 @@
 import { memo, useCallback, useMemo } from "react";
-import { FaHome, FaUser, FaLaptopCode, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
+import { FaHome, FaUser, FaLaptopCode, FaEnvelope, FaBlog } from "react-icons/fa";
 
 interface Props {
-  item: { id: string };
+  item: { id: string; href?: string };
   activeSection: string;
   hoveredId: string | null;
   setHoveredId: (id: string | null) => void;
@@ -12,6 +13,7 @@ const LABELS: Record<string, string> = {
   hero: "Home",
   about: "About",
   projects: "Projects",
+  blog: "Blog",
   contact: "Contact",
 };
 
@@ -33,6 +35,8 @@ const SidebarItem = memo(function SidebarItem({
         return <FaUser {...ICON_PROPS} />;
       case "projects":
         return <FaLaptopCode {...ICON_PROPS} />;
+      case "blog":
+        return <FaBlog {...ICON_PROPS} />;
       case "contact":
         return <FaEnvelope {...ICON_PROPS} />;
       default:
@@ -117,21 +121,63 @@ const SidebarItem = memo(function SidebarItem({
       </div>
 
       {/* Icon + Liquid Glass */}
-      <a
-        href={`#${item.id}`}
-        className={`relative p-3 lg:p-4 rounded-full transition-all duration-400 ease-out ${
-          isActive ? "scale-110" : "scale-100"
-        } hover:-translate-y-3 group/link block will-change-transform`}
-        style={{
-          transform:
-            isActive
-              ? "scale(1.1) translateZ(20px)"
-              : isHovered
-              ? "translateZ(20px)"
-              : "translateZ(0px)",
-          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-        }}
-      >
+      {item.href ? (
+        <Link
+          href={item.href}
+          className={`relative p-3 lg:p-4 rounded-full transition-all duration-400 ease-out ${
+            isActive ? "scale-110" : "scale-100"
+          } hover:-translate-y-3 group/link block will-change-transform`}
+          style={{
+            transform:
+              isActive
+                ? "scale(1.1) translateZ(20px)"
+                : isHovered
+                ? "translateZ(20px)"
+                : "translateZ(0px)",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+          }}
+        >
+          {/* Base + Gradient + Glow + Shimmer - only dark mode */}
+          <div className="absolute inset-0 rounded-full overflow-hidden hidden dark:block">
+            <div className="absolute inset-0 bg-white/20 dark:bg-white/12 backdrop-blur-3xl border border-white/50 dark:border-white/40 shadow-xl dark:shadow-2xl transition-all duration-400" />
+            <div
+              className={`absolute inset-0 transition-opacity duration-700 ${
+                isActive
+                  ? "opacity-80"
+                  : "opacity-0 group-hover/link:opacity-50"
+              }`}
+              style={{
+                background:
+                  "radial-gradient(135% 135% at 50% 0%, rgba(59,130,246,0.15) 0%, rgba(168,85,247,0.1) 50%, transparent 100%)",
+              }}
+            />
+          </div>
+
+          {/* Light mode - simple background, no blur */}
+          <div className="absolute inset-0 rounded-full overflow-hidden dark:hidden">
+            <div className="absolute inset-0 bg-white transition-all duration-400" />
+          </div>
+
+          <div className="relative flex items-center justify-center text-gray-700 dark:text-gray-200 transition-colors duration-700">
+            {getIcon(item.id)}
+          </div>
+        </Link>
+      ) : (
+        <a
+          href={`#${item.id}`}
+          className={`relative p-3 lg:p-4 rounded-full transition-all duration-400 ease-out ${
+            isActive ? "scale-110" : "scale-100"
+          } hover:-translate-y-3 group/link block will-change-transform`}
+          style={{
+            transform:
+              isActive
+                ? "scale(1.1) translateZ(20px)"
+                : isHovered
+                ? "translateZ(20px)"
+                : "translateZ(0px)",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+          }}
+        >
         {/* Base + Gradient + Glow + Shimmer - only dark mode */}
         <div className="absolute inset-0 rounded-full overflow-hidden hidden dark:block">
           <div className="absolute inset-0 bg-white/20 dark:bg-white/12 backdrop-blur-3xl border border-white/50 dark:border-white/40 shadow-xl dark:shadow-2xl transition-all duration-400" />
@@ -153,10 +199,11 @@ const SidebarItem = memo(function SidebarItem({
           <div className="absolute inset-0 bg-white transition-all duration-400" />
         </div>
 
-        <div className="relative flex items-center justify-center text-gray-700 dark:text-gray-200 transition-colors duration-700">
-          {getIcon(item.id)}
-        </div>
-      </a>
+          <div className="relative flex items-center justify-center text-gray-700 dark:text-gray-200 transition-colors duration-700">
+            {getIcon(item.id)}
+          </div>
+        </a>
+      )}
     </div>
   );
 });

@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "getting-started-with-nextjs-14",
+    "title": "Getting Started with Next.js 14: A Complete Guide",
+    "excerpt": "Learn how to build modern web applications with Next.js 14, including App Router, Server Components, and more.",
+    "date": "2024-03-15",
+    "readTime": "8 min read",
+    "category": "Tutorial",
+    "tags": ["Next.js", "React", "Web Development"],
+    "author": {
+      "name": "Farrukh Djumayev",
+      "avatar": "/image.png",
+      "bio": "Full-stack developer passionate about building modern web applications."
+    },
+    "coverImage": "/projects/portfolio_website_darkMode.png",
+    "published": true
+  },
+  {
+    "slug": "mastering-typescript-advanced-types",
+    "title": "Mastering TypeScript: Advanced Types and Patterns",
+    "excerpt": "Deep dive into TypeScript's advanced type system, including generics, conditional types, and utility types.",
+    "date": "2024-03-10",
+    "readTime": "12 min read",
+    "category": "Deep Dive",
+    "tags": ["TypeScript", "JavaScript", "Programming"],
+    "author": {
+      "name": "Farrukh Djumayev",
+      "avatar": "/image.png",
+      "bio": "Full-stack developer passionate about building modern web applications."
+    },
+    "published": true
+  },
+  {
+    "slug": "react-performance-optimization",
+    "title": "React Performance Optimization: Best Practices",
+    "excerpt": "Practical tips and techniques to optimize your React applications for better performance and user experience.",
+    "date": "2024-03-05",
+    "readTime": "10 min read",
+    "category": "Performance",
+    "tags": ["React", "Performance", "Optimization"],
+    "author": {
+      "name": "Farrukh Djumayev",
+      "avatar": "/image.png",
+      "bio": "Full-stack developer passionate about building modern web applications."
+    },
+    "published": true
+  },
+  {
+    "slug": "building-scalable-react-architecture",
+    "title": "Building Scalable React Architecture",
+    "excerpt": "Learn how to structure large React applications with clean architecture principles and best practices.",
+    "date": "2024-02-28",
+    "readTime": "15 min read",
+    "category": "Architecture",
+    "tags": ["React", "Architecture", "Best Practices"],
+    "author": {
+      "name": "Farrukh Djumayev",
+      "avatar": "/image.png",
+      "bio": "Full-stack developer passionate about building modern web applications."
+    },
+    "published": true
+  },
+  {
+    "slug": "modern-css-techniques",
+    "title": "Modern CSS Techniques for 2024",
+    "excerpt": "Explore the latest CSS features including container queries, cascade layers, and modern layout techniques.",
+    "date": "2024-02-20",
+    "readTime": "9 min read",
+    "category": "CSS",
+    "tags": ["CSS", "Web Design", "Frontend"],
+    "author": {
+      "name": "Farrukh Djumayev",
+      "avatar": "/image.png",
+      "bio": "Full-stack developer passionate about building modern web applications."
+    },
+    "published": true
+  },
+  {
+    "slug": "state-management-in-react",
+    "title": "State Management in React: A Comprehensive Guide",
+    "excerpt": "Compare different state management solutions in React and learn when to use each approach.",
+    "date": "2024-02-15",
+    "readTime": "11 min read",
+    "category": "Tutorial",
+    "tags": ["React", "State Management", "Redux"],
+    "author": {
+      "name": "Farrukh Djumayev",
+      "avatar": "/image.png",
+      "bio": "Full-stack developer passionate about building modern web applications."
+    },
+    "published": true
+  }
+]

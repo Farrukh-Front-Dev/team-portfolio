@@ -29,7 +29,7 @@ export default function Page() {
       {/* Global Background - only in dark mode */}
       {darkMode && (
         <>
-          <div style={{ position: "fixed", inset: 0, zIndex: -10 }}>
+          <div className="fixed inset-0 z-0 pointer-events-none">
             <Particles
               particleColors={particleColors}
               particleCount={200}
@@ -64,7 +64,7 @@ export default function Page() {
         <div className="fixed inset-0 z-0 bg-white pointer-events-none" />
       )}
 
-      <main className="relative z-20">
+      <main className="relative z-10">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />

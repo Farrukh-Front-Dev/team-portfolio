@@ -1,0 +1,145 @@
+{
+  "slug": "getting-started-with-nextjs-14",
+  "title": "Getting Started with Next.js 14: A Complete Guide",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Introduction"
+    },
+    {
+      "type": "paragraph",
+      "text": "Next.js 14 brings exciting new features and improvements that make building modern web applications easier than ever. In this comprehensive guide, we'll explore everything you need to know to get started."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What's New in Next.js 14?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Next.js 14 introduces several groundbreaking features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Turbopack**: Faster local development with Rust-based bundler",
+        "**Server Actions**: Simplified data mutations",
+        "**Partial Prerendering**: Best of both static and dynamic rendering",
+        "**Improved Image Optimization**: Better performance and DX"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Setting Up Your First Project"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's start by creating a new Next.js 14 project:"
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "code": "npx create-next-app@latest my-app\ncd my-app\nnpm run dev"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "App Router Basics"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App Router is the recommended way to build Next.js applications. Here's a simple example:"
+    },
+    {
+      "type": "code",
+      "language": "typescript",
+      "code": "// app/page.tsx\nexport default function Home() {\n  return (\n    <main>\n      <h1>Welcome to Next.js 14</h1>\n    </main>\n  );\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Server Components"
+    },
+    {
+      "type": "paragraph",
+      "text": "Server Components are the default in Next.js 14. They run on the server and don't send JavaScript to the client:"
+    },
+    {
+      "type": "code",
+      "language": "typescript",
+      "code": "// app/posts/page.tsx\nasync function getPosts() {\n  const res = await fetch('https://api.example.com/posts');\n  return res.json();\n}\n\nexport default async function PostsPage() {\n  const posts = await getPosts();\n  \n  return (\n    <div>\n      {posts.map(post => (\n        <article key={post.id}>\n          <h2>{post.title}</h2>\n          <p>{post.excerpt}</p>\n        </article>\n      ))}\n    </div>\n  );\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Client Components"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you need interactivity, use Client Components with the \"use client\" directive:"
+    },
+    {
+      "type": "code",
+      "language": "typescript",
+      "code": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Counter() {\n  const [count, setCount] = useState(0);\n  \n  return (\n    <button onClick={() => setCount(count + 1)}>\n      Count: {count}\n    </button>\n  );\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Performance Optimization"
+    },
+    {
+      "type": "paragraph",
+      "text": "Next.js 14 provides excellent built-in optimizations:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Image Optimization"
+    },
+    {
+      "type": "code",
+      "language": "typescript",
+      "code": "import Image from 'next/image';\n\nexport default function Hero() {\n  return (\n    <Image\n      src=\"/hero.jpg\"\n      alt=\"Hero\"\n      width={1200}\n      height={600}\n      priority\n    />\n  );\n}"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Font Optimization"
+    },
+    {
+      "type": "code",
+      "language": "typescript",
+      "code": "import { Inter } from 'next/font/google';\n\nconst inter = Inter({ subsets: ['latin'] });\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\" className={inter.className}>\n      <body>{children}</body>\n    </html>\n  );\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Deployment"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deploy your Next.js app to Vercel with zero configuration:"
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "code": "npm run build\nvercel deploy"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Next.js 14 is a powerful framework that makes building modern web applications a breeze. With features like Server Components, improved performance, and excellent developer experience, it's the perfect choice for your next project."
+    },
+    {
+      "type": "paragraph",
+      "text": "Happy coding! 🚀"
+    }
+  ]
+}

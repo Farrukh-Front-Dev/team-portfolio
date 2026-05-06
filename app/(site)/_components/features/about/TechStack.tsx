@@ -23,22 +23,32 @@ export default function TechStack({ groups }: Props) {
                 <div
                   key={item.name}
                   className="relative p-3 sm:p-4 rounded-xl flex flex-col items-center gap-2
-                             group transition-all duration-500 ease-out
-                             hover:scale-105 hover:-translate-y-1 overflow-hidden
-                             bg-gray-100 dark:bg-transparent animate-fadeInUp"
+                             group transition-all duration-400 ease-out
+                             hover:scale-105 hover:-translate-y-3 overflow-hidden
+                             animate-fadeInUp will-change-transform"
                   style={{ 
                     animationDelay: `${200 + (groupIndex + 1) * 100 + itemIndex * 50}ms`,
                     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)"
                   }}
                 >
-                  {/* Glass background - only dark mode */}
+                  {/* Base + Gradient + Glow - only dark mode */}
                   <div className="absolute inset-0 rounded-xl overflow-hidden hidden dark:block">
-                    <div className="absolute inset-0 bg-white/20 dark:bg-white/12 backdrop-blur-3xl 
-                                   border border-white/50 dark:border-white/40 
-                                   shadow-xl dark:shadow-2xl transition-all duration-400 
-                                   group-hover:bg-white/30 dark:group-hover:bg-white/15" />
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-60 transition-opacity duration-500
-                                   bg-gradient-radial from-blue-500/15 via-purple-500/10 to-transparent" />
+                    <div 
+                      className="absolute inset-0 transition-all duration-400"
+                      style={{
+                        background: "rgba(255, 255, 255, 0.20)",
+                        backdropFilter: "blur(48px)",
+                        WebkitBackdropFilter: "blur(48px)",
+                        border: "1px solid rgba(255, 255, 255, 0.4)",
+                        boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)"
+                      }}
+                    />
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
+                      style={{
+                        background: "radial-gradient(135% 135% at 50% 0%, rgba(59,130,246,0.15) 0%, rgba(168,85,247,0.1) 50%, transparent 100%)"
+                      }}
+                    />
                   </div>
 
                   {/* Light mode - simple background */}
@@ -46,14 +56,11 @@ export default function TechStack({ groups }: Props) {
                     <div className="absolute inset-0 bg-white transition-all duration-400" />
                   </div>
 
-                  {/* Shine effect - only dark mode */}
-                  <span className="absolute -top-1 -left-8 w-16 h-32 bg-white/30 dark:bg-white/20 
-                                  rounded-full blur-2xl transform rotate-45 scale-150 dark:animate-pulse 
-                                  pointer-events-none hidden dark:block" />
-
                   {/* Content */}
-                  <div className="text-2xl sm:text-3xl relative z-10">{item.icon}</div>
-                  <span className="text-xs sm:text-sm font-medium relative z-10 text-gray-900 dark:text-white text-center">
+                  <div className="text-2xl sm:text-3xl relative z-10 text-gray-700 dark:text-gray-200 transition-colors duration-700">
+                    {item.icon}
+                  </div>
+                  <span className="text-xs sm:text-sm font-medium relative z-10 text-gray-900 dark:text-white text-center transition-colors duration-700">
                     {item.name}
                   </span>
                 </div>
