@@ -63,6 +63,7 @@ export default function ContactForm({ }: ContactFormProps) {
       className="
         relative
         w-full max-w-xl
+        backdrop-blur-lg
         mx-auto
         flex flex-col gap-4 sm:gap-5 md:gap-6
         p-4 sm:p-6 md:p-8 mb-8 sm:mb-12 md:mb-16

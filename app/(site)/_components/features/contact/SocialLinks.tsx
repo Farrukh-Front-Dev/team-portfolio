@@ -21,7 +21,7 @@ export default function SocialLinks({ links }: SocialLinksProps) {
           target={link.href.startsWith("mailto:") ? undefined : "_blank"}
           rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
           aria-label={link.label}
-          className="group relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 
+          className="group relative backdrop-blur-md w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 
                     rounded-full transition-all duration-500 
                     hover:-translate-y-1 hover:scale-105 
                     overflow-hidden animate-fadeInUp"

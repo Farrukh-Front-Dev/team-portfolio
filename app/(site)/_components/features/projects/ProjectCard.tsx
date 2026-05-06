@@ -24,17 +24,17 @@ export default function ProjectCard({ project, index, labels }: ProjectCardProps
   return (
     <article
       style={{ boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)" }}
-      className="relative group rounded-md sm:rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden
+      className="relative dark:backdrop-blur-md group rounded-md sm:rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden
                  flex flex-col transition-all duration-500 ease-out
                  hover:scale-[1.02] sm:hover:scale-[1.03] md:hover:scale-105 
                  hover:-translate-y-0.5 sm:hover:-translate-y-1 md:hover:-translate-y-2"
     >
       {/* Liquid Glass Background - only dark mode */}
       <div className="absolute inset-0 rounded-md sm:rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden z-0 hidden dark:block">
-        <div className="absolute inset-0 bg-white/20 dark:bg-white/12 backdrop-blur-3xl 
-                       border border-white/50 dark:border-white/40 
-                       shadow-lg sm:shadow-xl dark:shadow-xl dark:sm:shadow-2xl transition-all duration-400 
-                       group-hover:bg-white/30 dark:group-hover:bg-white/15" />
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-xl 
+                       border border-white/30 
+                       shadow-xl sm:shadow-2xl transition-all duration-400 
+                       group-hover:bg-white/15 group-hover:backdrop-blur-2xl" />
         <div className="absolute inset-0 opacity-0 group-hover:opacity-60 transition-opacity duration-500"
              style={{
                background: "radial-gradient(135% 135% at 50% 0%, rgba(59,130,246,0.15) 0%, rgba(168,85,247,0.1) 50%, transparent 100%)"
