@@ -1,9 +1,9 @@
 import { memo, useCallback, useMemo } from "react";
 import Link from "next/link";
-import { FaHome, FaUser, FaLaptopCode, FaEnvelope, FaBlog } from "react-icons/fa";
+import { FaHome, FaUser, FaLaptopCode, FaEnvelope, FaUsers, FaCog } from "react-icons/fa";
 
 interface Props {
-  item: { id: string; href?: string };
+  item: { id: string; label?: string; href?: string };
   activeSection: string;
   hoveredId: string | null;
   setHoveredId: (id: string | null) => void;
@@ -11,9 +11,9 @@ interface Props {
 
 const LABELS: Record<string, string> = {
   hero: "Home",
-  about: "About",
+  team: "Team",
+  services: "Services",
   projects: "Projects",
-  blog: "Blog",
   contact: "Contact",
 };
 
@@ -25,22 +25,22 @@ const SidebarItem = memo(function SidebarItem({
   hoveredId,
   setHoveredId,
 }: Props) {
-  const getLabel = useCallback((id: string) => LABELS[id] || "", []);
+  const getLabel = useCallback((id: string) => item.label || LABELS[id] || "", [item.label]);
 
   const getIcon = useCallback((id: string) => {
     switch (id) {
       case "hero":
         return <FaHome {...ICON_PROPS} />;
-      case "about":
-        return <FaUser {...ICON_PROPS} />;
+      case "team":
+        return <FaUsers {...ICON_PROPS} />;
+      case "services":
+        return <FaCog {...ICON_PROPS} />;
       case "projects":
         return <FaLaptopCode {...ICON_PROPS} />;
-      case "blog":
-        return <FaBlog {...ICON_PROPS} />;
       case "contact":
         return <FaEnvelope {...ICON_PROPS} />;
       default:
-        return null;
+        return <FaHome {...ICON_PROPS} />;
     }
   }, []);
 

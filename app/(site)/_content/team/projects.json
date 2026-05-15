@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Full-Stack E-commerce Platform",
+    "description": "Complete e-commerce solution with modern UI, product catalog, shopping cart, secure checkout, payment integration, and comprehensive admin panel.",
+    "link": "https://github.com/devduo/ecommerce-platform",
+    "demo": "https://ecommerce-demo.devduo.dev",
+    "imageLight": "/image.png",
+    "imageDark": "/image.png",
+    "technologies": {
+      "frontend": ["Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+      "backend": ["Django", "PostgreSQL", "Redis", "Stripe API"]
+    },
+    "features": [
+      "Product catalog with search and filters",
+      "Shopping cart and wishlist",
+      "Secure payment integration",
+      "Order tracking",
+      "Admin dashboard",
+      "Real-time inventory management"
+    ],
+    "type": "team",
+    "contributors": ["farrukh", "backend-dev"]
+  },
+  {
+    "name": "Real-Time Task Management System",
+    "description": "Collaborative task management platform with Kanban board, real-time updates, team collaboration, and project analytics.",
+    "link": "https://github.com/devduo/task-manager",
+    "demo": "https://tasks-demo.devduo.dev",
+    "imageLight": "/image.png",
+    "imageDark": "/image.png",
+    "technologies": {
+      "frontend": ["React", "TypeScript", "Tailwind CSS", "WebSocket"],
+      "backend": ["Django Channels", "PostgreSQL", "Redis"]
+    },
+    "features": [
+      "Kanban board interface",
+      "Real-time collaboration",
+      "Task assignments and notifications",
+      "Project analytics dashboard",
+      "Team management",
+      "File attachments"
+    ],
+    "type": "team",
+    "contributors": ["farrukh", "backend-dev"]
+  },
+  {
+    "name": "Blog Platform with CMS",
+    "description": "Modern blog platform with rich text editor, image management, comments system, search functionality, and powerful admin CMS.",
+    "link": "https://github.com/devduo/blog-platform",
+    "demo": "https://blog-demo.devduo.dev",
+    "imageLight": "/image.png",
+    "imageDark": "/image.png",
+    "technologies": {
+      "frontend": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+      "backend": ["Django", "PostgreSQL", "AWS S3", "Elasticsearch"]
+    },
+    "features": [
+      "Rich text editor",
+      "Image upload and optimization",
+      "Comments and reactions",
+      "Full-text search",
+      "SEO optimization",
+      "Admin CMS panel"
+    ],
+    "type": "team",
+    "contributors": ["farrukh", "backend-dev"]
+  }
+]

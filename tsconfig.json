@@ -17,9 +17,13 @@
     "paths": {
       "@components/*": ["app/(site)/_components/*"],
       "@hooks/*": ["app/(site)/_hooks/*"],
-      "@lib/*": ["app/_lib/*"],
+      "@lib/*": ["app/(site)/_lib/*"],
+      "@/_lib/*": ["app/_lib/*"],
+      "@/_types": ["app/_types/index.ts"],
+      "@/_types/*": ["app/_types/*"],
       "@types": ["app/_types/index.ts"],
       "@context/*": ["app/(site)/_context/*"],
+      "@content": ["app/(site)/_content/index.ts"],
       "@content/*": ["app/(site)/_content/*"]
     },
     "plugins": [

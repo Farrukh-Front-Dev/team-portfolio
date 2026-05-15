@@ -1,0 +1,312 @@
+{
+  "team": {
+    "name": "DevDuo",
+    "tagline": "Full-Stack Development Team",
+    "description": "Professional full-stack development team specializing in modern web applications. We combine cutting-edge frontend technologies with robust backend solutions to deliver scalable, high-performance products.",
+    "mission": "Building exceptional web experiences from frontend to backend",
+    "email": "team@devduo.dev",
+    "telegram": "http://t.me/DevDuo_Team",
+    "experience": "2+ years combined experience",
+    "projectsCompleted": "10+",
+    "technologies": {
+      "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+      "backend": ["Django", "Python", "PostgreSQL", "Redis", "Docker"],
+      "tools": ["Git", "Docker", "Postman", "Swagger", "CI/CD"]
+    }
+  },
+  
+  "members": [
+    {
+      "id": "farrukh",
+      "name": "Farrukh Djumayev",
+      "role": "Frontend Developer",
+      "title": "Frontend Engineer",
+      "bio": "Frontend Engineer specializing in React and Next.js, focused on building modern, scalable, and maintainable web applications with clean architecture and strong UI engineering practices.",
+      "image": "/image.png",
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "HTML5",
+        "CSS3",
+        "Git",
+        "Docker",
+        "Postman"
+      ],
+      "experience": "2024 — Present",
+      "education": [
+        {
+          "title": "Software Engineering Program",
+          "organization": "School 21 / 42 Network",
+          "period": "2024 — Present"
+        },
+        {
+          "title": "Frontend Development Program",
+          "organization": "Najot Ta'lim",
+          "period": "Completed"
+        }
+      ],
+      "contact": {
+        "email": "farrukh.front.dev@gmail.com",
+        "phone": "+9988888114171",
+        "linkedin": "https://www.linkedin.com/in/farrukhdjumayev",
+        "telegram": "http://t.me/Farrukh_Djumayev",
+        "github": "https://github.com/Farrukh-Front-Dev",
+        "instagram": "https://instagram.com/farrukh.djumayev"
+      },
+      "projects": [
+        {
+          "name": "Kokand University Website",
+          "description": "Responsive university and alumni website with clean architecture, accessible UI, and optimized frontend performance.",
+          "link": "https://github.com/Farrukh-Front-Dev/kokand_university",
+          "demo": "https://kualumni.uz/",
+          "imageLight": "/projects/kokand_university_lightMode.png",
+          "imageDark": "/projects/kokand_university_darkMode.png",
+          "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+          "type": "individual"
+        },
+        {
+          "name": "Kelajakka Qadam Markazi",
+          "description": "Minimal responsive promo website showcasing an educational center's links using HTML, CSS, and JavaScript.",
+          "link": "https://github.com/Farrukh-Front-Dev/KelajakkaQadam",
+          "demo": "https://kelajakka-qadam-markazi.vercel.app/",
+          "imageLight": "/projects/kelajakka_qadam_markazi_lightMode.png",
+          "imageDark": "/projects/kelajakka_qadam_markazi_lightMode.png",
+          "technologies": ["HTML", "CSS", "JavaScript"],
+          "type": "individual"
+        },
+        {
+          "name": "Portfolio Website",
+          "description": "Personal portfolio built with Next.js, Tailwind CSS, and TypeScript, featuring dark mode and glassmorphism UI.",
+          "link": "https://github.com/Farrukh-Front-Dev/portfolio",
+          "demo": "#hero",
+          "imageLight": "/projects/portfolio_website_lightMode.png",
+          "imageDark": "/projects/portfolio_website_darkMode.png",
+          "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+          "type": "individual"
+        },
+        {
+          "name": "React Dev Components",
+          "description": "Collection of reusable React UI components with scalable structure and responsive design patterns.",
+          "link": "https://github.com/Farrukh-Front-Dev/ReactDev",
+          "demo": "https://react-dev-components.vercel.app/",
+          "imageLight": "/projects/reactdev_lightMode.png",
+          "imageDark": "/projects/reactdev_lightMode.png",
+          "technologies": ["React", "TypeScript", "CSS"],
+          "type": "individual"
+        }
+      ]
+    },
+    {
+      "id": "backend-dev",
+      "name": "Backend Developer",
+      "role": "Backend Developer",
+      "title": "Backend Engineer",
+      "bio": "Backend Engineer specializing in Django and Python, focused on building scalable REST APIs, robust database architectures, and high-performance server-side applications with clean code principles.",
+      "image": "/image.png",
+      "skills": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Celery",
+        "Git",
+        "Linux",
+        "Nginx",
+        "AWS"
+      ],
+      "experience": "2023 — Present",
+      "education": [
+        {
+          "title": "Backend Development Program",
+          "organization": "IT Academy",
+          "period": "Completed"
+        },
+        {
+          "title": "Computer Science",
+          "organization": "University",
+          "period": "2020 — 2024"
+        }
+      ],
+      "contact": {
+        "email": "backend.dev@example.com",
+        "phone": "+998901234567",
+        "linkedin": "https://www.linkedin.com/in/backend-developer",
+        "telegram": "http://t.me/backend_developer",
+        "github": "https://github.com/backend-developer",
+        "instagram": "https://instagram.com/backend.developer"
+      },
+      "projects": [
+        {
+          "name": "E-commerce REST API",
+          "description": "Scalable REST API for e-commerce platform with product management, cart, orders, payment integration, and admin panel.",
+          "link": "https://github.com/backend-developer/ecommerce-api",
+          "demo": "https://api.ecommerce-demo.com/docs",
+          "imageLight": "/image.png",
+          "imageDark": "/image.png",
+          "technologies": ["Django", "PostgreSQL", "Redis", "Celery", "Docker"],
+          "type": "individual"
+        },
+        {
+          "name": "Task Management API",
+          "description": "Real-time task management system with WebSocket support, authentication, role-based access control, and notifications.",
+          "link": "https://github.com/backend-developer/task-api",
+          "demo": "https://api.tasks-demo.com/docs",
+          "imageLight": "/image.png",
+          "imageDark": "/image.png",
+          "technologies": ["Django Channels", "PostgreSQL", "Redis", "Docker"],
+          "type": "individual"
+        },
+        {
+          "name": "Blog CMS Backend",
+          "description": "Content management system backend with admin panel, image upload, search, comments, and SEO optimization.",
+          "link": "https://github.com/backend-developer/blog-cms",
+          "demo": "https://api.blog-demo.com/admin",
+          "imageLight": "/image.png",
+          "imageDark": "/image.png",
+          "technologies": ["Django", "PostgreSQL", "AWS S3", "Elasticsearch"],
+          "type": "individual"
+        },
+        {
+          "name": "Authentication Microservice",
+          "description": "Standalone authentication service with JWT, OAuth2, email verification, password reset, and rate limiting.",
+          "link": "https://github.com/backend-developer/auth-service",
+          "demo": "https://api.auth-demo.com/docs",
+          "imageLight": "/image.png",
+          "imageDark": "/image.png",
+          "technologies": ["Django", "Redis", "PostgreSQL", "Docker"],
+          "type": "individual"
+        }
+      ]
+    }
+  ],
+  
+  "teamProjects": [
+    {
+      "name": "Full-Stack E-commerce Platform",
+      "description": "Complete e-commerce solution with modern UI, product catalog, shopping cart, secure checkout, payment integration, and comprehensive admin panel.",
+      "link": "https://github.com/devduo/ecommerce-platform",
+      "demo": "https://ecommerce-demo.devduo.dev",
+      "imageLight": "/image.png",
+      "imageDark": "/image.png",
+      "technologies": {
+        "frontend": ["Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+        "backend": ["Django", "PostgreSQL", "Redis", "Stripe API"]
+      },
+      "features": [
+        "Product catalog with search and filters",
+        "Shopping cart and wishlist",
+        "Secure payment integration",
+        "Order tracking",
+        "Admin dashboard",
+        "Real-time inventory management"
+      ],
+      "type": "team",
+      "contributors": ["farrukh", "backend-dev"]
+    },
+    {
+      "name": "Real-Time Task Management System",
+      "description": "Collaborative task management platform with Kanban board, real-time updates, team collaboration, and project analytics.",
+      "link": "https://github.com/devduo/task-manager",
+      "demo": "https://tasks-demo.devduo.dev",
+      "imageLight": "/image.png",
+      "imageDark": "/image.png",
+      "technologies": {
+        "frontend": ["React", "TypeScript", "Tailwind CSS", "WebSocket"],
+        "backend": ["Django Channels", "PostgreSQL", "Redis"]
+      },
+      "features": [
+        "Kanban board interface",
+        "Real-time collaboration",
+        "Task assignments and notifications",
+        "Project analytics dashboard",
+        "Team management",
+        "File attachments"
+      ],
+      "type": "team",
+      "contributors": ["farrukh", "backend-dev"]
+    },
+    {
+      "name": "Blog Platform with CMS",
+      "description": "Modern blog platform with rich text editor, image management, comments system, search functionality, and powerful admin CMS.",
+      "link": "https://github.com/devduo/blog-platform",
+      "demo": "https://blog-demo.devduo.dev",
+      "imageLight": "/image.png",
+      "imageDark": "/image.png",
+      "technologies": {
+        "frontend": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+        "backend": ["Django", "PostgreSQL", "AWS S3", "Elasticsearch"]
+      },
+      "features": [
+        "Rich text editor",
+        "Image upload and optimization",
+        "Comments and reactions",
+        "Full-text search",
+        "SEO optimization",
+        "Admin CMS panel"
+      ],
+      "type": "team",
+      "contributors": ["farrukh", "backend-dev"]
+    }
+  ],
+  
+  "services": [
+    {
+      "title": "Full-Stack Web Development",
+      "description": "Complete web application development from frontend to backend, including database design, API development, and deployment.",
+      "icon": "code",
+      "technologies": ["React", "Next.js", "Django", "PostgreSQL"],
+      "deliverables": [
+        "Responsive frontend UI",
+        "RESTful API backend",
+        "Database design",
+        "Deployment & hosting",
+        "Documentation"
+      ]
+    },
+    {
+      "title": "Frontend Development",
+      "description": "Modern, responsive, and performant user interfaces with React, Next.js, and TypeScript.",
+      "icon": "layout",
+      "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      "deliverables": [
+        "Responsive design",
+        "Component library",
+        "State management",
+        "API integration",
+        "Performance optimization"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "description": "Scalable REST APIs, database architecture, authentication, and server-side logic with Django and Python.",
+      "icon": "server",
+      "technologies": ["Django", "PostgreSQL", "Redis", "Docker"],
+      "deliverables": [
+        "REST API development",
+        "Database design",
+        "Authentication & authorization",
+        "API documentation",
+        "Testing & deployment"
+      ]
+    },
+    {
+      "title": "API Integration",
+      "description": "Third-party API integration, custom API development, and comprehensive API documentation.",
+      "icon": "plug",
+      "technologies": ["REST", "GraphQL", "WebSocket", "OAuth"],
+      "deliverables": [
+        "API integration",
+        "Custom endpoints",
+        "Swagger documentation",
+        "Error handling",
+        "Rate limiting"
+      ]
+    }
+  ]
+}

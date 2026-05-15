@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Full-Stack Web Development",
+    "description": "Complete web application development from frontend to backend, including database design, API development, and deployment.",
+    "icon": "code",
+    "technologies": ["React", "Next.js", "Django", "PostgreSQL"],
+    "deliverables": [
+      "Responsive frontend UI",
+      "RESTful API backend",
+      "Database design",
+      "Deployment & hosting",
+      "Documentation"
+    ]
+  },
+  {
+    "title": "Frontend Development",
+    "description": "Modern, responsive, and performant user interfaces with React, Next.js, and TypeScript.",
+    "icon": "layout",
+    "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    "deliverables": [
+      "Responsive design",
+      "Component library",
+      "State management",
+      "API integration",
+      "Performance optimization"
+    ]
+  },
+  {
+    "title": "Backend Development",
+    "description": "Scalable REST APIs, database architecture, authentication, and server-side logic with Django and Python.",
+    "icon": "server",
+    "technologies": ["Django", "PostgreSQL", "Redis", "Docker"],
+    "deliverables": [
+      "REST API development",
+      "Database design",
+      "Authentication & authorization",
+      "API documentation",
+      "Testing & deployment"
+    ]
+  },
+  {
+    "title": "API Integration",
+    "description": "Third-party API integration, custom API development, and comprehensive API documentation.",
+    "icon": "plug",
+    "technologies": ["REST", "GraphQL", "WebSocket", "OAuth"],
+    "deliverables": [
+      "API integration",
+      "Custom endpoints",
+      "Swagger documentation",
+      "Error handling",
+      "Rate limiting"
+    ]
+  }
+]

@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import FlipCard from "./FlipCard";
-import { retryFetch } from "@lib/retry";
+import { retryFetch } from "@/_lib/retry";
 
 export default function VisitorInput() {
   const [name, setName] = useState("");

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { VALIDATION_MESSAGES } from "@lib/constants";
+import { VALIDATION_MESSAGES } from "@/_lib/constants";
 import type { ApiResponse } from "@types";
 
 interface ContactFormProps {

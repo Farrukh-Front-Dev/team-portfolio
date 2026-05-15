@@ -1,9 +1,9 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { env } from "@lib/env";
-import { logger } from "@lib/logger";
-import { validateContactForm, ValidationError } from "@lib/validators";
-import { isRateLimited, getClientIp, RateLimitError } from "@lib/rateLimit";
-import { HTTP_STATUS } from "@lib/constants";
+import { env } from "@/_lib/env";
+import { logger } from "@/_lib/logger";
+import { validateContactForm, ValidationError } from "@/_lib/validators";
+import { isRateLimited, getClientIp, RateLimitError } from "@/_lib/rateLimit";
+import { HTTP_STATUS } from "@/_lib/constants";
 import type { ApiResponse, ContactFormData } from "@types";
 
 export async function POST(req: NextRequest): Promise<NextResponse<ApiResponse>> {

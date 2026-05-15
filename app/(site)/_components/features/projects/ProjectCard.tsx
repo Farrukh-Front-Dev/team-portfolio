@@ -11,7 +11,11 @@ interface ProjectCardProps {
     imageDark?: string;
     link: string;
     demo: string;
-    technologies: string[];
+    technologies: string[] | {
+      frontend: string[];
+      backend: string[];
+    };
+    type?: 'individual' | 'team';
   };
   index: number;
   labels: {
@@ -21,6 +25,11 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, index, labels }: ProjectCardProps) {
+  // Normalize technologies to array
+  const technologies = Array.isArray(project.technologies)
+    ? project.technologies
+    : [...project.technologies.frontend, ...project.technologies.backend];
+
   return (
     <article
       style={{ boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)" }}
@@ -29,6 +38,13 @@ export default function ProjectCard({ project, index, labels }: ProjectCardProps
                  hover:scale-[1.02] sm:hover:scale-[1.03] md:hover:scale-105 
                  hover:-translate-y-0.5 sm:hover:-translate-y-1 md:hover:-translate-y-2"
     >
+      {/* Project Type Badge */}
+      {project.type === 'team' && (
+        <div className="absolute top-2 right-2 z-30 px-3 py-1 rounded-full bg-cyan-500/90 backdrop-blur-sm text-white text-xs font-semibold">
+          Team Project
+        </div>
+      )}
+
       {/* Liquid Glass Background - only dark mode */}
       <div className="absolute inset-0 rounded-md sm:rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden z-0 hidden dark:block">
         <div className="absolute inset-0 bg-white/10 backdrop-blur-xl 
@@ -169,7 +185,7 @@ export default function ProjectCard({ project, index, labels }: ProjectCardProps
 
         {/* Technologies Pills */}
         <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1 sm:pt-2">
-          {project.technologies.map((tech) => (
+          {technologies.slice(0, 4).map((tech) => (
             <span
               key={tech}
               className="px-2 sm:px-2.5 md:px-3 py-0.5 sm:py-1 
@@ -183,6 +199,16 @@ export default function ProjectCard({ project, index, labels }: ProjectCardProps
               {tech}
             </span>
           ))}
+          {technologies.length > 4 && (
+            <span className="px-2 sm:px-2.5 md:px-3 py-0.5 sm:py-1 
+                           text-[10px] sm:text-xs md:text-sm font-medium
+                           rounded-full
+                           bg-gray-200 dark:bg-white/10
+                           text-gray-700 dark:text-gray-300
+                           border border-gray-300 dark:border-white/20">
+              +{technologies.length - 4}
+            </span>
+          )}
         </div>
       </div>
     </article>

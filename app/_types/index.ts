@@ -28,3 +28,6 @@ export interface VisitorData {
   screen: string;
   timestamp?: string;
 }
+
+// Re-export team types
+export * from './team';

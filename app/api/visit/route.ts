@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { logger } from "@lib/logger";
-import { HTTP_STATUS } from "@lib/constants";
+import { logger } from "@/_lib/logger";
+import { HTTP_STATUS } from "@/_lib/constants";
 import type { ApiResponse, VisitorData } from "@types";
 
 export async function POST(req: NextRequest): Promise<NextResponse<ApiResponse>> {

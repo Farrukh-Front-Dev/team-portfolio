@@ -1,13 +1,21 @@
 "use client";
 import { useState, useCallback, useMemo } from "react";
 import ToggleButton from "@components/ui/ToggleButton";
-import { sidebar as sidebarContent } from "@content/content.json";
 import SidebarItem from "./SidebarItem";
 import useActiveSection from "@hooks/useActiveSection";
 
+// Team portfolio navigation
+const sidebarContent = [
+  { id: "hero", label: "Home" },
+  { id: "team", label: "Team" },
+  { id: "services", label: "Services" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" }
+];
+
 export default function Sidebar() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const activeSection = useActiveSection(["hero", "about", "projects", "contact"]);
+  const activeSection = useActiveSection(["hero", "team", "services", "projects", "contact"]);
 
   const handleSetHoveredId = useCallback((id: string | null) => {
     setHoveredId(id);

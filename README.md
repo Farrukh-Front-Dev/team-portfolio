@@ -1,9 +1,22 @@
-# Farrukh's Portfolio Website
+# DevDuo - Team Portfolio
 
-A modern, high-performance portfolio website built with Next.js, React, and TypeScript.
+A modern, high-performance team portfolio website built with Next.js, React, and TypeScript.
+
+## 👥 Team
+
+**DevDuo** - Full-Stack Development Team
+
+### Team Members:
+- **Farrukh Djumayev** - Frontend Developer (React, Next.js, TypeScript)
+- **Backend Developer** - Backend Developer (Django, Python, PostgreSQL)
+
+---
 
 ## 🚀 Features
 
+- **Team Showcase** - Professional team member profiles
+- **Services Section** - Comprehensive service offerings
+- **Project Portfolio** - Team and individual projects with filtering
 - **Modern Design** - Glassmorphism UI with smooth animations
 - **Dark/Light Mode** - Theme switching with persistent storage
 - **Responsive** - Mobile-first design approach
@@ -11,19 +24,22 @@ A modern, high-performance portfolio website built with Next.js, React, and Type
 - **Type Safe** - Full TypeScript support
 - **Accessible** - WCAG compliant components
 - **Contact Form** - Integrated with Telegram Bot API
-- **Visitor Tracking** - Anonymous visitor analytics
+
+---
 
 ## 📋 Prerequisites
 
 - Node.js 18+ 
 - npm or yarn
 
+---
+
 ## 🛠️ Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Farrukh-Front-Dev/portfolio.git
-cd portfolio
+git clone https://github.com/Farrukh-Front-Dev/team-portfolio.git
+cd team-portfolio
 ```
 
 2. Install dependencies:
@@ -41,11 +57,11 @@ cp .env.example .env.local
 TELEGRAM_BOT_TOKEN=your_bot_token
 TELEGRAM_CHAT_ID=your_chat_id
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_SITE_NAME=Farrukh Portfolio
+NEXT_PUBLIC_SITE_NAME=DevDuo Team Portfolio
 NEXT_PUBLIC_API_URL=http://localhost:3000/api
-NEXT_PUBLIC_ENABLE_ANALYTICS=false
-NEXT_PUBLIC_ENABLE_COMMENTS=false
 ```
+
+---
 
 ## 🚀 Getting Started
 
@@ -70,6 +86,8 @@ npm run start
 npm run lint
 ```
 
+---
+
 ## 📁 Project Structure
 
 ```
@@ -78,21 +96,79 @@ app/
 │   ├── _components/           # React components
 │   │   ├── common/            # Reusable components
 │   │   ├── sections/          # Page sections
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── TeamSection.tsx
+│   │   │   ├── ServicesSection.tsx
+│   │   │   ├── ProjectsSection.tsx
+│   │   │   └── ContactSection.tsx
 │   │   ├── features/          # Feature-specific components
+│   │   │   ├── team/          # Team member components
+│   │   │   ├── projects/      # Project components
+│   │   │   └── contact/       # Contact components
 │   │   ├── effects/           # Visual effects
 │   │   └── ui/                # UI primitives
 │   ├── _hooks/                # Custom React hooks
 │   ├── _lib/                  # Utilities & helpers
+│   │   └── teamData.ts        # Team data utilities
 │   ├── _types/                # TypeScript types
 │   ├── _context/              # React context providers
 │   ├── _content/              # Static content
+│   │   └── teamData.json      # Team information (EDIT THIS!)
 │   ├── layout.tsx             # Root layout
 │   └── page.tsx               # Home page
+├── _lib/                      # Global utilities
+├── _types/                    # Global TypeScript types
+│   ├── index.ts
+│   └── team.ts                # Team-related types
 ├── api/                       # API routes
 │   ├── contact/               # Contact form endpoint
 │   └── visit/                 # Visitor tracking endpoint
 └── globals.css                # Global styles
 ```
+
+---
+
+## 🎨 Customization
+
+### Team Information
+
+Edit `app/(site)/_content/teamData.json` to update:
+- Team name and description
+- Team member information
+- Projects (team and individual)
+- Services offered
+- Tech stack
+
+### Backend Developer Information
+
+To update the backend developer's information, edit the second member in `teamData.json`:
+
+```json
+{
+  "id": "backend-dev",
+  "name": "Your Name",
+  "role": "Backend Developer",
+  "bio": "Your bio here...",
+  "image": "/path-to-your-image.jpg",
+  "skills": ["Python", "Django", "PostgreSQL", ...],
+  "contact": {
+    "email": "your-email@example.com",
+    "github": "https://github.com/your-username",
+    ...
+  },
+  "projects": [...]
+}
+```
+
+### Colors & Theme
+
+Edit `tailwind.config.ts` to customize colors and theme.
+
+### Components
+
+All components are in `app/(site)/_components/` organized by feature.
+
+---
 
 ## 🔐 Environment Variables
 
@@ -105,65 +181,7 @@ app/
 - `NEXT_PUBLIC_SITE_NAME` - Site name
 - `NEXT_PUBLIC_API_URL` - API base URL
 
-### Optional (Feature Flags)
-- `NEXT_PUBLIC_ENABLE_ANALYTICS` - Enable analytics (default: false)
-- `NEXT_PUBLIC_ENABLE_COMMENTS` - Enable comments (default: false)
-
-## 📚 API Endpoints
-
-### POST /api/contact
-Send a contact message via Telegram.
-
-**Request:**
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "message": "Hello, I'm interested in your work!"
-}
-```
-
-**Response:**
-```json
-{
-  "status": "success",
-  "message": "Message sent successfully!"
-}
-```
-
-### POST /api/visit
-Track visitor information.
-
-**Request:**
-```json
-{
-  "visitorId": "uuid",
-  "name": "John",
-  "type": "visit",
-  "page": "/",
-  "screen": "1920x1080"
-}
-```
-
-## 🎨 Customization
-
-### Colors & Theme
-Edit `tailwind.config.ts` to customize colors and theme.
-
-### Content
-Update content in `app/(site)/_content/`:
-- `content.json` - Main content
-- `skills.tsx` - Skills list
-- `ProjectsContent.tsx` - Projects list
-
-### Components
-All components are in `app/(site)/_components/` organized by feature.
-
-## 🧪 Testing
-
-```bash
-npm run test
-```
+---
 
 ## 📊 Performance
 
@@ -171,13 +189,16 @@ npm run test
 - Core Web Vitals: All green
 - Bundle Size: ~150KB (gzipped)
 
+---
+
 ## 🔒 Security
 
 - Input validation on all forms
 - Rate limiting on API endpoints
 - XSS protection
-- CSRF tokens on forms
 - Environment variables for sensitive data
+
+---
 
 ## 📱 Browser Support
 
@@ -185,6 +206,8 @@ npm run test
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
+
+---
 
 ## 🚀 Deployment
 
@@ -202,25 +225,33 @@ npm run build
 npm run start
 ```
 
+---
+
 ## 📝 License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+---
 
-**Farrukh Djumayev**
+## 👥 Team Contact
+
+**DevDuo Team**
+- Email: team@devduo.dev
+- Telegram: [@DevDuo_Team](http://t.me/DevDuo_Team)
+
+### Individual Contacts:
+
+**Farrukh Djumayev** (Frontend Developer)
 - GitHub: [@Farrukh-Front-Dev](https://github.com/Farrukh-Front-Dev)
 - LinkedIn: [farrukhdjumayev](https://www.linkedin.com/in/farrukhdjumayev)
 - Email: farrukh.front.dev@gmail.com
+
+---
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📞 Support
-
-For support, email farrukh.front.dev@gmail.com or open an issue on GitHub.
-
 ---
 
-Made with ❤️ by Farrukh
+Made with ❤️ by DevDuo Team

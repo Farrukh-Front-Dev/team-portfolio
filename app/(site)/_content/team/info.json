@@ -1,0 +1,15 @@
+{
+  "name": "DevDuo",
+  "tagline": "Full-Stack Development Team",
+  "description": "Professional full-stack development team specializing in modern web applications. We combine cutting-edge frontend technologies with robust backend solutions to deliver scalable, high-performance products.",
+  "mission": "Building exceptional web experiences from frontend to backend",
+  "email": "team@devduo.dev",
+  "telegram": "http://t.me/DevDuo_Team",
+  "experience": "2+ years combined experience",
+  "projectsCompleted": "10+",
+  "technologies": {
+    "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+    "backend": ["Django", "Python", "PostgreSQL", "Redis", "Docker"],
+    "tools": ["Git", "Docker", "Postman", "Swagger", "CI/CD"]
+  }
+}
