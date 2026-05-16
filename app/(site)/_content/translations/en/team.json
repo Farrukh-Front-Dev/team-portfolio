@@ -1,0 +1,36 @@
+{
+  "heading": "Meet Our Team",
+  "subtitle": "Professional development team delivering modern web solutions with cutting-edge technologies and best practices.",
+  "badge": "Our Team",
+  "stats": {
+    "experience": "Combined Experience",
+    "projects": "Projects Completed",
+    "teamProjects": "Team Projects"
+  },
+  "techStack": {
+    "title": "Our Tech Stack",
+    "description": "Modern technologies we use to build exceptional products",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools"
+  },
+  "labels": {
+    "viewProfile": "View Profile",
+    "skills": "Skills",
+    "experience": "Experience"
+  },
+  "members": {
+    "farrukh": {
+      "name": "Farrukh Djumayev",
+      "role": "Frontend Developer",
+      "title": "Frontend Engineer",
+      "bio": "Passionate Frontend Engineer specializing in React ecosystem. Building scalable, performant web applications with modern architecture and best practices."
+    },
+    "backend-dev": {
+      "name": "Bekzod Komilov",
+      "role": "Backend Developer",
+      "title": "Backend Engineer",
+      "bio": "Experienced Backend Engineer focused on building robust, scalable server-side applications with clean architecture and high performance."
+    }
+  }
+}

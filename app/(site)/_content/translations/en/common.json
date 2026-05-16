@@ -1,0 +1,32 @@
+{
+  "labels": {
+    "projects": "Projects",
+    "blog": "Blog",
+    "techStack": "Tech Stack",
+    "getInTouch": "Get in Touch",
+    "viewCode": "View Code",
+    "viewDemo": "View Demo",
+    "viewProfile": "View Profile",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "sendMessage": "Send Message",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "team": "Team",
+    "services": "Services"
+  },
+  "footer": {
+    "copyright": "© 2024 Farrukh. All rights reserved.",
+    "builtWith": "Built with",
+    "and": "and"
+  }
+}

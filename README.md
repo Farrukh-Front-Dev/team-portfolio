@@ -14,16 +14,18 @@ A modern, high-performance team portfolio website built with Next.js, React, and
 
 ## 🚀 Features
 
+- **Multilingual Support** - 3 languages (English, Russian, Uzbek) with smooth switching
 - **Team Showcase** - Professional team member profiles
 - **Services Section** - Comprehensive service offerings
 - **Project Portfolio** - Team and individual projects with filtering
 - **Modern Design** - Glassmorphism UI with smooth animations
 - **Dark/Light Mode** - Theme switching with persistent storage
 - **Responsive** - Mobile-first design approach
-- **Performance Optimized** - Lazy loading, code splitting, image optimization
+- **Performance Optimized** - Lazy loading, code splitting, image optimization, translation caching
 - **Type Safe** - Full TypeScript support
 - **Accessible** - WCAG compliant components
 - **Contact Form** - Integrated with Telegram Bot API
+- **I18n Architecture** - Senior-level internationalization system
 
 ---
 
@@ -107,13 +109,21 @@ app/
 │   │   │   └── contact/       # Contact components
 │   │   ├── effects/           # Visual effects
 │   │   └── ui/                # UI primitives
+│   │       └── LanguageSwitcher.tsx  # Language selector
 │   ├── _hooks/                # Custom React hooks
 │   ├── _lib/                  # Utilities & helpers
-│   │   └── teamData.ts        # Team data utilities
+│   │   ├── teamData.ts        # Team data utilities
+│   │   └── i18n.ts            # I18n utilities
 │   ├── _types/                # TypeScript types
 │   ├── _context/              # React context providers
+│   │   ├── ThemeContext.tsx   # Theme management
+│   │   └── I18nContext.tsx    # I18n management
 │   ├── _content/              # Static content
-│   │   └── teamData.json      # Team information (EDIT THIS!)
+│   │   ├── teamData.json      # Team information (EDIT THIS!)
+│   │   └── translations/      # I18n translations
+│   │       ├── en/            # English translations
+│   │       ├── ru/            # Russian translations
+│   │       └── uz/            # Uzbek translations
 │   ├── layout.tsx             # Root layout
 │   └── page.tsx               # Home page
 ├── _lib/                      # Global utilities
@@ -129,6 +139,24 @@ app/
 ---
 
 ## 🎨 Customization
+
+### Multilingual Content
+
+Edit translation files in `app/(site)/_content/translations/`:
+- `en/` - English translations
+- `ru/` - Russian translations  
+- `uz/` - Uzbek translations
+
+Each language has section-specific files:
+- `common.json` - Shared labels, navigation
+- `hero.json` - Hero section
+- `about.json` - About section
+- `projects.json` - Projects section
+- `contact.json` - Contact section
+- `team.json` - Team section
+- `services.json` - Services section
+
+See `I18N_IMPLEMENTATION_GUIDE.md` for details.
 
 ### Team Information
 

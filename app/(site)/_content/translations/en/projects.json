@@ -1,0 +1,33 @@
+{
+  "heading": "Our Projects",
+  "subtitle": "Explore our team collaborations and individual contributions",
+  "filters": {
+    "all": "All Projects",
+    "team": "Team Projects",
+    "individual": "Individual"
+  },
+  "empty": "No projects found for this filter",
+  "labels": {
+    "viewCode": "View Code",
+    "viewDemo": "View Demo",
+    "technologies": "Technologies"
+  },
+  "projects": {
+    "kokand": {
+      "name": "Kokand University Website",
+      "description": "Responsive university and alumni website with clean architecture, accessible UI, and optimized frontend performance."
+    },
+    "kelajakka": {
+      "name": "Kelajakka Qadam Markazi",
+      "description": "Minimal responsive promo website showcasing an educational center's links using HTML, CSS, and JavaScript."
+    },
+    "portfolio": {
+      "name": "Portfolio Website",
+      "description": "Personal portfolio built with Next.js, Tailwind CSS, and TypeScript, featuring dark mode and glassmorphism UI."
+    },
+    "reactdev": {
+      "name": "React Dev Components",
+      "description": "Collection of reusable React UI components with scalable structure and responsive design patterns."
+    }
+  }
+}

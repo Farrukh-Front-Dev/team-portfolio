@@ -1,0 +1,43 @@
+{
+  "heading": "Get in Touch",
+  "subtitle": "I'm always open to new opportunities and collaborations. Feel free to reach out through any of the channels below!",
+  "form": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your.email@example.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell me about your project..."
+    },
+    "submit": "Send Message",
+    "sending": "Sending..."
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "nameTooShort": "Name must be at least 2 characters",
+    "nameTooLong": "Name must be less than 50 characters",
+    "emailInvalid": "Please enter a valid email address",
+    "messageRequired": "Message is required",
+    "messageTooShort": "Message must be at least 10 characters",
+    "messageTooLong": "Message must be less than 1000 characters"
+  },
+  "messages": {
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "rateLimited": "Too many requests. Please try again later."
+  },
+  "social": {
+    "title": "Connect with me",
+    "email": "Email",
+    "phone": "Phone",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "telegram": "Telegram",
+    "instagram": "Instagram"
+  }
+}

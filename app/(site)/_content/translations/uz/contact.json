@@ -1,0 +1,43 @@
+{
+  "heading": "Bog'laning",
+  "subtitle": "Men har doim yangi imkoniyatlar va hamkorlikka ochiqman. Quyidagi kanallar orqali bog'laning!",
+  "form": {
+    "name": {
+      "label": "Ism",
+      "placeholder": "Ismingiz"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "sizning.email@example.com"
+    },
+    "message": {
+      "label": "Xabar",
+      "placeholder": "Loyihangiz haqida gapirib bering..."
+    },
+    "submit": "Yuborish",
+    "sending": "Yuborilmoqda..."
+  },
+  "validation": {
+    "nameRequired": "Ism kiritish shart",
+    "nameTooShort": "Ism kamida 2 ta belgidan iborat bo'lishi kerak",
+    "nameTooLong": "Ism 50 ta belgidan kam bo'lishi kerak",
+    "emailInvalid": "Iltimos, to'g'ri email manzilini kiriting",
+    "messageRequired": "Xabar kiritish shart",
+    "messageTooShort": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak",
+    "messageTooLong": "Xabar 1000 ta belgidan kam bo'lishi kerak"
+  },
+  "messages": {
+    "success": "Xabar muvaffaqiyatli yuborildi!",
+    "error": "Xabar yuborishda xatolik. Iltimos, qayta urinib ko'ring.",
+    "rateLimited": "Juda ko'p so'rovlar. Iltimos, keyinroq urinib ko'ring."
+  },
+  "social": {
+    "title": "Men bilan bog'laning",
+    "email": "Email",
+    "phone": "Telefon",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "telegram": "Telegram",
+    "instagram": "Instagram"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "heading": "Свяжитесь со мной",
+  "subtitle": "Я всегда открыт для новых возможностей и сотрудничества. Свяжитесь со мной через любой из каналов ниже!",
+  "form": {
+    "name": {
+      "label": "Имя",
+      "placeholder": "Ваше имя"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "ваш.email@example.com"
+    },
+    "message": {
+      "label": "Сообщение",
+      "placeholder": "Расскажите о вашем проекте..."
+    },
+    "submit": "Отправить",
+    "sending": "Отправка..."
+  },
+  "validation": {
+    "nameRequired": "Имя обязательно",
+    "nameTooShort": "Имя должно содержать минимум 2 символа",
+    "nameTooLong": "Имя должно быть меньше 50 символов",
+    "emailInvalid": "Пожалуйста, введите корректный email адрес",
+    "messageRequired": "Сообщение обязательно",
+    "messageTooShort": "Сообщение должно содержать минимум 10 символов",
+    "messageTooLong": "Сообщение должно быть меньше 1000 символов"
+  },
+  "messages": {
+    "success": "Сообщение успешно отправлено!",
+    "error": "Не удалось отправить сообщение. Пожалуйста, попробуйте снова.",
+    "rateLimited": "Слишком много запросов. Пожалуйста, попробуйте позже."
+  },
+  "social": {
+    "title": "Свяжитесь со мной",
+    "email": "Email",
+    "phone": "Телефон",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "telegram": "Telegram",
+    "instagram": "Instagram"
+  }
+}

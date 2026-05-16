@@ -1,0 +1,36 @@
+{
+  "heading": "Bizning Jamoa",
+  "subtitle": "Zamonaviy texnologiyalar va eng yaxshi amaliyotlar bilan professional veb-yechimlar yaratuvchi jamoa.",
+  "badge": "Bizning Jamoa",
+  "stats": {
+    "experience": "Umumiy Tajriba",
+    "projects": "Bajarilgan Loyihalar",
+    "teamProjects": "Jamoa Loyihalari"
+  },
+  "techStack": {
+    "title": "Bizning Texnologiyalar",
+    "description": "Ajoyib mahsulotlar yaratish uchun foydalanadigan zamonaviy texnologiyalar",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Vositalar"
+  },
+  "labels": {
+    "viewProfile": "Profilni Ko'rish",
+    "skills": "Ko'nikmalar",
+    "experience": "Tajriba"
+  },
+  "members": {
+    "farrukh": {
+      "name": "Farrukh Djumayev",
+      "role": "Frontend Dasturchi",
+      "title": "Frontend Muhandis",
+      "bio": "React ekotizimida ixtisoslashgan ishtiyoqli Frontend Muhandis. Zamonaviy arxitektura va eng yaxshi amaliyotlar bilan kengaytiriladigan, samarali veb-ilovalar yarataman."
+    },
+    "backend-dev": {
+      "name": "Bekzod Komilov",
+      "role": "Backend Dasturchi",
+      "title": "Backend Muhandis",
+      "bio": "Toza arxitektura va yuqori samaradorlik bilan mustahkam, kengaytiriladigan server-side ilovalar yaratishga e'tibor qaratgan tajribali Backend Muhandis."
+    }
+  }
+}

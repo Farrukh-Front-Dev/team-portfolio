@@ -1,0 +1,39 @@
+{
+  "heading": "Bizning Xizmatlar",
+  "subtitle": "Frontend dan backend gacha to'liq veb-dasturlash yechimlari",
+  "services": [
+    {
+      "title": "Full-Stack Dasturlash",
+      "description": "Frontend va backend integratsiyasi, ma'lumotlar bazasi dizayni va deployment bilan to'liq veb-ilovalar.",
+      "features": [
+        "Zamonaviy React/Next.js frontend",
+        "Kengaytiriladigan Django backend",
+        "Ma'lumotlar bazasi arxitekturasi",
+        "API dasturlash",
+        "Production deployment"
+      ]
+    },
+    {
+      "title": "Frontend Dasturlash",
+      "description": "Zamonaviy JavaScript frameworklar bilan chiroyli, responsive va samarali foydalanuvchi interfeyslari.",
+      "features": [
+        "React va Next.js ilovalar",
+        "Responsive UI/UX dizayn",
+        "State management",
+        "API integratsiyasi",
+        "Samaradorlikni optimallashtirish"
+      ]
+    },
+    {
+      "title": "Backend Dasturlash",
+      "description": "RESTful API va ma'lumotlar bazasi boshqaruvi bilan mustahkam server-side ilovalar.",
+      "features": [
+        "Django REST Framework",
+        "Ma'lumotlar bazasi dizayni (PostgreSQL)",
+        "Autentifikatsiya va avtorizatsiya",
+        "API hujjatlari",
+        "Server deployment"
+      ]
+    }
+  ]
+}

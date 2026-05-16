@@ -1,0 +1,39 @@
+{
+  "heading": "Our Services",
+  "subtitle": "Comprehensive web development solutions from frontend to backend",
+  "services": [
+    {
+      "title": "Full-Stack Development",
+      "description": "Complete web applications with frontend and backend integration, database design, and deployment.",
+      "features": [
+        "Modern React/Next.js frontend",
+        "Scalable Django backend",
+        "Database architecture",
+        "API development",
+        "Production deployment"
+      ]
+    },
+    {
+      "title": "Frontend Development",
+      "description": "Beautiful, responsive, and performant user interfaces with modern JavaScript frameworks.",
+      "features": [
+        "React & Next.js applications",
+        "Responsive UI/UX design",
+        "State management",
+        "API integration",
+        "Performance optimization"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "description": "Robust server-side applications with RESTful APIs and database management.",
+      "features": [
+        "Django REST Framework",
+        "Database design (PostgreSQL)",
+        "Authentication & authorization",
+        "API documentation",
+        "Server deployment"
+      ]
+    }
+  ]
+}

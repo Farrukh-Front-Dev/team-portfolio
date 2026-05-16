@@ -4,13 +4,10 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { memo } from "react";
 import { ArrowRight, Users } from "lucide-react";
+import { useI18n } from "@context/I18nContext";
 
 interface CTAButtonsProps {
   isVisible: boolean;
-  primaryText?: string;
-  primaryHref?: string;
-  secondaryText?: string;
-  secondaryHref?: string;
   delay?: number;
 }
 
@@ -22,12 +19,10 @@ interface CTAButtonsProps {
  */
 const CTAButtons = memo(({ 
   isVisible,
-  primaryText = "Meet the Team",
-  primaryHref = "#team",
-  secondaryText = "View Projects",
-  secondaryHref = "#projects",
   delay = 0.9
 }: CTAButtonsProps) => {
+  const { t } = useI18n();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -37,7 +32,7 @@ const CTAButtons = memo(({
     >
       {/* Primary CTA - Liquid Glass Style */}
       <Link
-        href={primaryHref}
+        href="#team"
         className="group relative px-8 py-4 rounded-2xl
                  bg-white/10 dark:bg-white/10
                  backdrop-blur-2xl
@@ -52,7 +47,7 @@ const CTAButtons = memo(({
                  transition-all duration-300
                  overflow-hidden
                  focus:outline-none focus:ring-4 focus:ring-purple-500/50"
-        aria-label={primaryText}
+        aria-label={t("cta.primary", "hero")}
       >
         {/* Gradient overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20
@@ -66,13 +61,13 @@ const CTAButtons = memo(({
         
         <span className="relative z-10 flex items-center gap-2">
           <Users className="w-5 h-5" aria-hidden="true" />
-          {primaryText}
+          {t("cta.primary", "hero")}
         </span>
       </Link>
       
       {/* Secondary CTA - Liquid Glass Style */}
       <Link
-        href={secondaryHref}
+        href="#projects"
         className="group relative px-8 py-4 rounded-2xl
                  bg-white/10 dark:bg-white/5
                  backdrop-blur-2xl
@@ -87,7 +82,7 @@ const CTAButtons = memo(({
                  transition-all duration-300
                  overflow-hidden
                  focus:outline-none focus:ring-4 focus:ring-purple-500/50"
-        aria-label={secondaryText}
+        aria-label={t("cta.secondary", "hero")}
       >
         {/* Glass shine effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent
@@ -95,7 +90,7 @@ const CTAButtons = memo(({
              aria-hidden="true" />
         
         <span className="relative z-10 flex items-center gap-2">
-          {secondaryText}
+          {t("cta.secondary", "hero")}
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" 
                       aria-hidden="true" />
         </span>

@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import { ThemeProvider } from "@context/ThemeContext";
+import { I18nProvider } from "@context/I18nContext";
 import VisitorInput from "@components/common/VisitorInput";
-import MagnifierCursor from "@components/ui/MagnifierCursor";
 import ErrorBoundary from "../_components/ErrorBoundary";
 import "../globals.css";
 
@@ -59,13 +59,12 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <ErrorBoundary>
-          <ThemeProvider>
-            <VisitorInput />
-            <div className="hidden md:block">
-              <MagnifierCursor />
-            </div>
-            {children}
-          </ThemeProvider>
+          <I18nProvider>
+            <ThemeProvider>
+              <VisitorInput />
+              {children}
+            </ThemeProvider>
+          </I18nProvider>
         </ErrorBoundary>
       </body>
     </html>

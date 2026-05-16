@@ -4,46 +4,45 @@
     "name": "Farrukh Djumayev",
     "role": "Frontend Developer",
     "title": "Frontend Engineer",
-    "bio": "Frontend Engineer specializing in React and Next.js, focused on building modern, scalable, and maintainable web applications with clean architecture and strong UI engineering practices.",
+    "bio": "Passionate Frontend Engineer specializing in React ecosystem. Building scalable, performant web applications with modern architecture and best practices.",
     "image": "/image.png",
     "skills": [
       "React",
       "Next.js",
       "TypeScript",
-      "JavaScript",
       "Tailwind CSS",
       "Redux Toolkit",
+      "JavaScript",
       "HTML5",
       "CSS3",
       "Git",
-      "Docker",
-      "Postman"
+      "Docker"
     ],
-    "experience": "2024 — Present",
+    "experience": "2+ Years",
     "education": [
       {
-        "title": "Software Engineering Program",
+        "title": "Software Engineering",
         "organization": "School 21 / 42 Network",
         "period": "2024 — Present"
       },
       {
-        "title": "Frontend Development Program",
+        "title": "Frontend Development",
         "organization": "Najot Ta'lim",
-        "period": "Completed"
+        "period": "2023 — 2024"
       }
     ],
     "contact": {
       "email": "farrukh.front.dev@gmail.com",
-      "phone": "+9988888114171",
+      "phone": "+998888114171",
       "linkedin": "https://www.linkedin.com/in/farrukhdjumayev",
-      "telegram": "http://t.me/Farrukh_Djumayev",
+      "telegram": "https://t.me/Farrukh_Djumayev",
       "github": "https://github.com/Farrukh-Front-Dev",
       "instagram": "https://instagram.com/farrukh.djumayev"
     },
     "projects": [
       {
         "name": "Kokand University Website",
-        "description": "Responsive university and alumni website with clean architecture, accessible UI, and optimized frontend performance.",
+        "description": "Modern university platform with responsive design, accessible UI, and optimized performance.",
         "link": "https://github.com/Farrukh-Front-Dev/kokand_university",
         "demo": "https://kualumni.uz/",
         "imageLight": "/projects/kokand_university_lightMode.png",
@@ -52,117 +51,76 @@
         "type": "individual"
       },
       {
-        "name": "Kelajakka Qadam Markazi",
-        "description": "Minimal responsive promo website showcasing an educational center's links using HTML, CSS, and JavaScript.",
-        "link": "https://github.com/Farrukh-Front-Dev/KelajakkaQadam",
-        "demo": "https://kelajakka-qadam-markazi.vercel.app/",
-        "imageLight": "/projects/kelajakka_qadam_markazi_lightMode.png",
-        "imageDark": "/projects/kelajakka_qadam_markazi_lightMode.png",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "type": "individual"
-      },
-      {
         "name": "Portfolio Website",
-        "description": "Personal portfolio built with Next.js, Tailwind CSS, and TypeScript, featuring dark mode and glassmorphism UI.",
+        "description": "Personal portfolio with modern design, dark mode, and smooth animations.",
         "link": "https://github.com/Farrukh-Front-Dev/portfolio",
         "demo": "#hero",
         "imageLight": "/projects/portfolio_website_lightMode.png",
         "imageDark": "/projects/portfolio_website_darkMode.png",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
         "type": "individual"
-      },
-      {
-        "name": "React Dev Components",
-        "description": "Collection of reusable React UI components with scalable structure and responsive design patterns.",
-        "link": "https://github.com/Farrukh-Front-Dev/ReactDev",
-        "demo": "https://react-dev-components.vercel.app/",
-        "imageLight": "/projects/reactdev_lightMode.png",
-        "imageDark": "/projects/reactdev_lightMode.png",
-        "technologies": ["React", "TypeScript", "CSS"],
-        "type": "individual"
       }
     ]
   },
   {
     "id": "backend-dev",
-    "name": "Backend Developer",
+    "name": "Bekzod Komilov",
     "role": "Backend Developer",
     "title": "Backend Engineer",
-    "bio": "Backend Engineer specializing in Django and Python, focused on building scalable REST APIs, robust database architectures, and high-performance server-side applications with clean code principles.",
-    "image": "/image.png",
+    "bio": "Experienced Backend Engineer focused on building robust, scalable server-side applications with clean architecture and high performance.",
+    "image": "/bekzod-backend-dev.jpg",
     "skills": [
       "Python",
       "Django",
-      "Django REST Framework",
+      "REST API",
       "PostgreSQL",
       "Redis",
       "Docker",
-      "Celery",
       "Git",
       "Linux",
       "Nginx",
-      "AWS"
+      "Celery"
     ],
-    "experience": "2023 — Present",
+    "experience": "3+ Years",
     "education": [
       {
-        "title": "Backend Development Program",
+        "title": "Backend Development",
         "organization": "IT Academy",
-        "period": "Completed"
+        "period": "2021 — 2022"
       },
       {
         "title": "Computer Science",
         "organization": "University",
-        "period": "2020 — 2024"
+        "period": "2019 — 2023"
       }
     ],
     "contact": {
-      "email": "backend.dev@example.com",
+      "email": "bekzod.backend@example.com",
       "phone": "+998901234567",
-      "linkedin": "https://www.linkedin.com/in/backend-developer",
-      "telegram": "http://t.me/backend_developer",
-      "github": "https://github.com/backend-developer",
-      "instagram": "https://instagram.com/backend.developer"
+      "linkedin": "https://www.linkedin.com/in/bekzod-komilov",
+      "telegram": "https://t.me/bekzod_backend",
+      "github": "https://github.com/bekzod-backend",
+      "instagram": "https://instagram.com/bekzod.backend"
     },
     "projects": [
       {
-        "name": "E-commerce REST API",
-        "description": "Scalable REST API for e-commerce platform with product management, cart, orders, payment integration, and admin panel.",
-        "link": "https://github.com/backend-developer/ecommerce-api",
+        "name": "E-commerce API",
+        "description": "Scalable REST API with product management, orders, payments, and admin panel.",
+        "link": "https://github.com/bekzod-backend/ecommerce-api",
         "demo": "https://api.ecommerce-demo.com/docs",
         "imageLight": "/image.png",
         "imageDark": "/image.png",
-        "technologies": ["Django", "PostgreSQL", "Redis", "Celery", "Docker"],
+        "technologies": ["Django", "PostgreSQL", "Redis", "Docker"],
         "type": "individual"
       },
       {
         "name": "Task Management API",
-        "description": "Real-time task management system with WebSocket support, authentication, role-based access control, and notifications.",
-        "link": "https://github.com/backend-developer/task-api",
+        "description": "Real-time task system with WebSocket, authentication, and notifications.",
+        "link": "https://github.com/bekzod-backend/task-api",
         "demo": "https://api.tasks-demo.com/docs",
         "imageLight": "/image.png",
         "imageDark": "/image.png",
-        "technologies": ["Django Channels", "PostgreSQL", "Redis", "Docker"],
-        "type": "individual"
-      },
-      {
-        "name": "Blog CMS Backend",
-        "description": "Content management system backend with admin panel, image upload, search, comments, and SEO optimization.",
-        "link": "https://github.com/backend-developer/blog-cms",
-        "demo": "https://api.blog-demo.com/admin",
-        "imageLight": "/image.png",
-        "imageDark": "/image.png",
-        "technologies": ["Django", "PostgreSQL", "AWS S3", "Elasticsearch"],
-        "type": "individual"
-      },
-      {
-        "name": "Authentication Microservice",
-        "description": "Standalone authentication service with JWT, OAuth2, email verification, password reset, and rate limiting.",
-        "link": "https://github.com/backend-developer/auth-service",
-        "demo": "https://api.auth-demo.com/docs",
-        "imageLight": "/image.png",
-        "imageDark": "/image.png",
-        "technologies": ["Django", "Redis", "PostgreSQL", "Docker"],
+        "technologies": ["Django Channels", "PostgreSQL", "Redis"],
         "type": "individual"
       }
     ]

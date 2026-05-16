@@ -1,0 +1,33 @@
+{
+  "heading": "Bizning Loyihalar",
+  "subtitle": "Jamoa hamkorliklari va individual hissalarimizni ko'ring",
+  "filters": {
+    "all": "Barcha Loyihalar",
+    "team": "Jamoa Loyihalari",
+    "individual": "Individual"
+  },
+  "empty": "Bu filtr uchun loyihalar topilmadi",
+  "labels": {
+    "viewCode": "Kod",
+    "viewDemo": "Demo",
+    "technologies": "Texnologiyalar"
+  },
+  "projects": {
+    "kokand": {
+      "name": "Qo'qon Universiteti Sayti",
+      "description": "Toza arxitektura, qulay UI va optimallashtirilgan frontend samaradorligi bilan responsive universitet sayti."
+    },
+    "kelajakka": {
+      "name": "Kelajakka Qadam Markazi",
+      "description": "HTML, CSS va JavaScript yordamida ta'lim markazining havolalarini ko'rsatuvchi minimal responsive promo sayti."
+    },
+    "portfolio": {
+      "name": "Portfolio Sayti",
+      "description": "Next.js, Tailwind CSS va TypeScript bilan qurilgan shaxsiy portfolio, dark mode va glassmorphism UI bilan."
+    },
+    "reactdev": {
+      "name": "React Dev Komponentlar",
+      "description": "Kengaytiriladigan struktura va responsive dizayn patternlari bilan qayta foydalanish mumkin bo'lgan React UI komponentlar to'plami."
+    }
+  }
+}

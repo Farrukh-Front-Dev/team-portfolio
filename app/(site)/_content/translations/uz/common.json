@@ -1,0 +1,32 @@
+{
+  "labels": {
+    "projects": "Loyihalar",
+    "blog": "Blog",
+    "techStack": "Texnologiyalar",
+    "getInTouch": "Bog'lanish",
+    "viewCode": "Kod",
+    "viewDemo": "Demo",
+    "viewProfile": "Profil",
+    "readMore": "Batafsil",
+    "learnMore": "Ko'proq",
+    "contactUs": "Bog'laning",
+    "sendMessage": "Yuborish",
+    "loading": "Yuklanmoqda...",
+    "error": "Xato",
+    "success": "Muvaffaqiyatli"
+  },
+  "navigation": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "projects": "Loyihalar",
+    "blog": "Blog",
+    "contact": "Aloqa",
+    "team": "Jamoa",
+    "services": "Xizmatlar"
+  },
+  "footer": {
+    "copyright": "© 2024 Farrukh. Barcha huquqlar himoyalangan.",
+    "builtWith": "Yaratilgan",
+    "and": "va"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "heading": "Men haqimda",
+  "intro": "React va Next.js bo'yicha mutaxassis Frontend Muhandis, toza arxitektura va kuchli UI muhandislik amaliyotlari bilan zamonaviy, kengaytiriladigan va saqlash mumkin bo'lgan veb-ilovalar yaratishga e'tibor qarataman.",
+  "techStack": {
+    "title": "Texnologiyalar",
+    "subtitle": "Men ishlaydigan texnologiyalar"
+  },
+  "timeline": {
+    "title": "Tajriba va Ta'lim",
+    "experience": "Tajriba",
+    "education": "Ta'lim"
+  },
+  "experiences": [
+    {
+      "type": "experience",
+      "title": "Frontend Dasturchi",
+      "organization": "Mustaqil",
+      "period": "2024 — Hozir",
+      "description": [
+        "UI implementatsiyasi, state management, REST API integratsiyasi va production deploymentni qamrab oluvchi bir nechta real frontend loyihalarini ishlab chiqdim va yetkazdim.",
+        "Kengaytiriladigan komponent arxitekturasi, toza kod tamoyillari va samaradorlikka yo'naltirilgan UI muhandisligiga e'tibor qaratdim."
+      ]
+    },
+    {
+      "type": "education",
+      "title": "Dasturiy Ta'minot Muhandisligi Dasturi",
+      "organization": "School 21 / 42 Network",
+      "period": "2024 — Hozir",
+      "description": [
+        "Hozirda loyihaga asoslangan muhandislik ta'limi orqali backend dasturlash, tizim darajasidagi dasturlash va muammolarni hal qilish ko'nikmalarini kengaytirmoqdaman."
+      ]
+    },
+    {
+      "type": "education",
+      "title": "Frontend Dasturlash Dasturi",
+      "organization": "Najot Ta'lim",
+      "period": "Tugallangan",
+      "description": [
+        "React, Next.js, TypeScript, state management va zamonaviy frontend muhandislik amaliyotlari bo'yicha tuzilgan treningni tamomladim."
+      ]
+    }
+  ]
+}

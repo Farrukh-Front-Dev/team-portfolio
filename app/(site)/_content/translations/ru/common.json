@@ -1,0 +1,32 @@
+{
+  "labels": {
+    "projects": "Проекты",
+    "blog": "Блог",
+    "techStack": "Технологии",
+    "getInTouch": "Связаться",
+    "viewCode": "Код",
+    "viewDemo": "Демо",
+    "viewProfile": "Профиль",
+    "readMore": "Читать далее",
+    "learnMore": "Узнать больше",
+    "contactUs": "Связаться с нами",
+    "sendMessage": "Отправить",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно"
+  },
+  "navigation": {
+    "home": "Главная",
+    "about": "О нас",
+    "projects": "Проекты",
+    "blog": "Блог",
+    "contact": "Контакты",
+    "team": "Команда",
+    "services": "Услуги"
+  },
+  "footer": {
+    "copyright": "© 2024 Фаррух. Все права защищены.",
+    "builtWith": "Создано с",
+    "and": "и"
+  }
+}
